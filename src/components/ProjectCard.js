@@ -29,14 +29,17 @@ export default class ProjectCard extends Component {
               ) : (
                 <img src={mediaUrl} alt={projectData.name} className="project-image" />
               )}
-              <div className="project-overlay">
-                <div className="project-meta">
-                  <h5>{projectData.name}</h5>
-                  <p>{projectData.description}</p>
-                </div>
-              </div>
             </div>
           </Link>
+
+          <div className="project-info">
+            <h3 className="project-title">{projectData.name}</h3>
+            {projectData.developer && (
+              <h4 className="project-developer" >
+                Devloped by: {projectData.developer}
+              </h4>
+            )}
+          </div>
           
           <div className="project-tags-container">
             <div className="tags-list">

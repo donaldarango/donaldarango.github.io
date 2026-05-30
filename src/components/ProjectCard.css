@@ -100,6 +100,25 @@
   line-height: 1.5;
 }
 
+.project-info {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.project-developer {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #666;
+}
+
+.project-title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
 .project-tags-container {
   padding: 12px;
   border-top: 1px solid #e0e0e0;

@@ -49,15 +49,13 @@ let resumeData = {
         "imgurl":"images/portfolio/Mythbound.png",
         "videourl":"",
         "tags":["Unreal 5", "Multiplayer", "C++"],
-        "link":"/projects/project1",
         "fullDescription":"This is a detailed description",
-        "technologies":["React Native", "Firebase", "Redux"],
         "startDate":"Dec 2025",
         "endDate":"Present",
         "role":"Gameplay Programmer",
-        "link_url":"https://example.com/project1",
-        "github_url":"https://github.com/example/project1",
-        "images":["images/portfolio/phone.jpg"]
+        "developer": "Skaldforge",
+        "link_url":"",
+        "github_url":"",
       },
     ],
     "testimonials":[
