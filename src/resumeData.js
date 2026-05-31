@@ -15,7 +15,7 @@ let resumeData = {
           "className":"fa fa-github"
         },
       ],
-    "aboutme":"Some Description",
+    "aboutme":"I am a passionate game programmer with a strong background in C++ and a deep love for creating ",
     "address":"Orlando, FL",
     "education":[
       {
@@ -45,11 +45,12 @@ let resumeData = {
       {
         "id":"Mythbound",
         "name":"Mythbound",
-        "description":"Graduate Degree Capstone Project",
-        "imgurl":"images/portfolio/Mythbound.png",
-        "videourl":"",
+        "cardImgurl":"images/portfolio/Mythbound/MythboundBanner.png",
+        "bannerImgurl":"",
+        "bannerVideourl":"",
+        "logoImgurl":"images/portfolio/Mythbound/MythboundLogo.png",
         "tags":["Unreal 5", "Multiplayer", "C++"],
-        "fullDescription":"This is a detailed description",
+        "fullDescription":"Mythbound is a multiplayer arena brawler developed as the capstone project for my graduate degree in interactive entertainment. The game features fast-paced combat, a variety of characters with unique abilities, and exciting game modes.",
         "startDate":"Dec 2025",
         "endDate":"Present",
         "role":"Gameplay Programmer",

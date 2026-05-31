@@ -6,7 +6,7 @@ export default class ProjectCard extends Component {
   render() {
     const { projectData } = this.props;
     const tags = projectData.tags || [];
-    const mediaUrl = projectData.videourl || projectData.imgurl;
+    const mediaUrl = projectData.videourl || projectData.cardImgurl;
     const isVideo = projectData.videourl && projectData.videourl.match(/\.(mp4|webm|ogg|mov)$/i);
 
     return (

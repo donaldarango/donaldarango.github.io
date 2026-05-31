@@ -33,19 +33,34 @@ function ProjectLayout({ project, children }) {
 
       <div className="project-container">
         <div className="project-hero-media layout-hero-media">
-            {isVideo ? (
-              <video className="project-hero-video layout-hero-video" controls autoPlay muted>
-                <source src={`${process.env.PUBLIC_URL}/${project.videourl}`} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            ) : (
-              <img src={`${process.env.PUBLIC_URL}/${project.imgurl}`} alt={project.name} className="project-hero-image layout-hero-image" />
-            )}
-          </div>
+          {isVideo ? (
+            <video className="project-hero-video layout-hero-video" autoPlay muted loop playsInline>
+              <source src={`${process.env.PUBLIC_URL}/${project.videourl}`} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          ) : project.imgurl ? (
+            <img src={`${process.env.PUBLIC_URL}/${project.imgurl}`} alt={project.name} className="project-hero-image layout-hero-image" />
+          ) : (
+            <div className="project-hero-placeholder layout-hero-image"></div>
+          )}
+          
+          <div className="hero-overlay"></div>
+          
+          {project.logoImgurl && (
+            <div className="hero-logo-container">
+              <img src={`${process.env.PUBLIC_URL}/${project.logoImgurl}`} alt={`${project.name} Logo`} className="hero-logo" />
+            </div>
+          )}
+        </div>
 
         <div className="project-header layout-header">
           <h1 className="layout-title">{project.name}</h1>
-          <p className="project-role layout-role">{project.role}</p>
+          <p className="project-role layout-role">{project.role} {
+            project.developer && (
+              <span>at {project.developer}</span>
+            )
+          }</p>
+          
           
           <div className="tags-list layout-tags-list">
             {(project.tags || []).map((tag, index) => (
@@ -55,9 +70,15 @@ function ProjectLayout({ project, children }) {
             ))}
           </div>
 
-          {project.description && (
+          {project.projectType && (
+            <p className="project-type layout-type">
+              {project.projectType}
+            </p>
+          )}
+
+          {project.fullDescription && (
             <p className="project-description layout-description">
-              {project.description}
+              {project.fullDescription}
             </p>
           )}
 
