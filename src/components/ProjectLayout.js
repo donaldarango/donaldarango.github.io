@@ -17,7 +17,10 @@ function ProjectLayout({ project, children }) {
     );
   }
 
-  const isVideo = project.videourl && project.videourl.match(/\.(mp4|webm|ogg|mov)$/i);
+  const videoUrl = project.bannerVideourl || project.videourl;
+  const imageUrl = project.bannerImgurl || project.imgurl;
+  const isVideo = videoUrl && videoUrl.match(/\.(mp4|webm|ogg|mov)$/i);
+  const isGif = videoUrl && videoUrl.toLowerCase().endsWith('.gif');
 
   return (
     <section id="project-detail">
@@ -35,11 +38,13 @@ function ProjectLayout({ project, children }) {
         <div className="project-hero-media layout-hero-media">
           {isVideo ? (
             <video className="project-hero-video layout-hero-video" autoPlay muted loop playsInline>
-              <source src={`${process.env.PUBLIC_URL}/${project.videourl}`} type="video/mp4" />
+              <source src={`${process.env.PUBLIC_URL}/${videoUrl}`} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-          ) : project.imgurl ? (
-            <img src={`${process.env.PUBLIC_URL}/${project.imgurl}`} alt={project.name} className="project-hero-image layout-hero-image" />
+          ) : isGif ? (
+            <img src={`${process.env.PUBLIC_URL}/${videoUrl}`} alt={project.name} className="project-hero-image layout-hero-image" />
+          ) : imageUrl ? (
+            <img src={`${process.env.PUBLIC_URL}/${imageUrl}`} alt={project.name} className="project-hero-image layout-hero-image" />
           ) : (
             <div className="project-hero-placeholder layout-hero-image"></div>
           )}

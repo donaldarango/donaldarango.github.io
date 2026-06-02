@@ -7,7 +7,7 @@ function ZoomableImage({ src, alt, caption }) {
   return (
     <>
       <div className="accomplishment-image-container">
-        <img 
+        <img className="accomplishment-image"
           src={src} 
           alt={alt} 
           onClick={() => setIsOpen(true)}

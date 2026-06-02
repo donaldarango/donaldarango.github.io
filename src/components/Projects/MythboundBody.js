@@ -14,7 +14,7 @@ function MythboundBody({ project }) {
             <ul>
               <li><strong>Character Initialization:</strong> Built logic from CharacterData to handle spawning/attaching weapons and granting abilities/effects (server authoritative and replicated to client).</li>
               <li><strong>Character Selection:</strong> Set up CharacterData struct and intialization logic used within the selection screen. This allows designers to easily configure and balance different character options for visuals and abilities.</li>
-              <li><strong>Tag-Based Input System:</strong> Implemented an input system for abilities that allows automatic linking between InputActions and GameplayTags defined in an InputConfig asset.</li>
+              <li><strong>Tag-Based Input:</strong> Implemented an input system for abilities that allows automatic linking between InputActions and GameplayTags defined in an InputConfig asset.</li>
               <li><strong>Player Death & Respawn:</strong> Handled character lifecycle management for player death and respawn sequences. This involves resetting player ability and attribute states.</li>
               <li><strong>Stamina System:</strong> Implemented Stamina attributes, movement speed multipliers, and stamina drain for movement abilities.</li>
             </ul>
