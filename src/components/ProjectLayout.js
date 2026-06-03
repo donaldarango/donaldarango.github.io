@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './Project.css';
 import './ProjectLayout.css';
@@ -93,24 +93,6 @@ function ProjectLayout({ project, children }) {
           <div className="project-main layout-main">
             {children}
           </div>
-
-          {(project.link_url || project.github_url) && (
-            <div className="project-info-card layout-info-card">
-              <h3>Quick Links</h3>
-              <div className="project-links layout-links">
-                {project.link_url && (
-                  <a href={project.link_url} target="_blank" rel="noopener noreferrer" className="project-link-btn">
-                    Visit Project
-                  </a>
-                )}
-                {project.github_url && (
-                  <a href={project.github_url} target="_blank" rel="noopener noreferrer" className="project-link-btn github">
-                    GitHub Repository
-                  </a>
-                )}
-              </div>
-            </div>
-          )}
         </div>
       </div>
     </section>

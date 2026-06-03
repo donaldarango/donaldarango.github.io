@@ -81,6 +81,25 @@
   }
 }
 
+@media (min-width: 768px) {
+  .accomplishment-group.two-column {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .accomplishment-group.two-column > div {
+    flex: 1;
+  }
+}
+
+.accomplishment-image-group {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+
 .accomplishment-image {
   max-width: 100%;
   height: auto;

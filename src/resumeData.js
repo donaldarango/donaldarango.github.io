@@ -73,6 +73,20 @@ let resumeData = {
         "link_url":"",
         "github_url":"",
       },
+      {
+        "id":"RayTracer",
+        "name":"OpenGL Ray Tracer",
+        "cardImgurl":"images/portfolio/RayTracer/RayTracerPerspective.png",
+        "bannerVideourl":"images/portfolio/RayTracer/RayTracerBanner.mp4",
+        "logoImgurl":"images/portfolio/RayTracer/Opengl-logo.svg",
+        "tags":["C++", "Graphics", "OpenGL"],
+        "fullDescription":"This was my first project using OpenGL and was my introduction into the world of graphics programming. It is a basic ray tracer that supports rendering spheres, planes, and triangles along with configurable lighting and materials. The objects themselves are defined by their geometric properties and material attributes. The project was built using C++ and OpenGL and was a great learning experience for me in terms of understanding the fundamentals of graphics programming.",
+        "startDate":"February 2024",
+        "endDate":"March 2024",
+        "role":"Gameplay Programmer",
+        "link_url":"",
+        "github_url":"https://github.com/donaldarango/Raytracer",
+      },
     ],
     "testimonials":[
       {
