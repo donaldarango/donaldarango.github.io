@@ -15,26 +15,8 @@ let resumeData = {
           "className":"fa fa-github"
         },
       ],
-    "aboutme":"I am a passionate game programmer with a strong background in C++ and a deep love for everything games. ",
+    "aboutme":"I am a passionate, team-oriented game programmer with a strong background in C++ and a deep love for everything games. I started my software engineering journey as a web developer, but quickly found my true passion lies in game development. The complexity of the problems and the creativity involved in making games is like no other field, and this is what drives me to keep learning and improving my skills.",
     "address":"Orlando, FL",
-    "education":[
-      {
-        "UniversityName":"",
-        "specialization":"",
-        "MonthOfPassing":"",
-        "YearOfPassing":"",
-        "Achievements":""
-      },
-    ],
-    "work":[
-      {
-        "CompanyName":"",
-        "specialization":"",
-        "MonthOfLeaving":"",
-        "YearOfLeaving":"",
-        "Achievements":""
-      },
-    ],
     "skillsDescription":"",
     "skills":[
       {
@@ -65,7 +47,7 @@ let resumeData = {
         "bannerVideourl":"images/portfolio/SlayTheSpire/STSGameplay.mp4",
         "logoImgurl":"images/portfolio/SlayTheSpire/STSLogo.png",
         "tags":["C++", "Custom Engine", "JSON", "Raylib"],
-        "fullDescription":"This Slay The Spire clone was created as a group project in 3 weeks to cap off the completion of a custom C++ game engine that was developed over the course of a semester. While I cannot give to many details about the engine here, due to limiting the information available online for future students, I would love to chat about the technical details in person! This game features the main battle gameplay loop of Slay The Spire, including card-based combat, enemy encounters, and character progression systems.",
+        "fullDescription":"This Slay The Spire clone was created as a group project in 3 weeks to cap off the completion of a custom C++ game engine that was developed over the course of a semester. While I cannot give too many details about the engine here, due to limiting the information available online for future students, I would love to chat about the technical details in person! This game features the main battle gameplay loop of Slay The Spire, including card-based combat, enemy encounters, and character progression systems.",
         "startDate":"April 2026",
         "endDate":"May 2026",
         "role":"Gameplay Programmer",
