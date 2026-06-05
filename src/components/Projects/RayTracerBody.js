@@ -13,17 +13,17 @@ function RayTracerBody({ project }) {
             <p>The ray tracer uses the Phong lighting model to achieve its lighting effects. This consists of 3 components: ambient, diffuse, and specular which can be configured for each material. It was very cool to see how realistic of a lighting model could be achieved with just these three effects. Here you can see the differences between having various lighting setups:</p>
             <div className="accomplishment-image-group">
                 <ZoomableImage
-                src={`${process.env.PUBLIC_URL}/images/portfolio/Raytracer/ambient.png`}
+                src={`${process.env.PUBLIC_URL}/images/portfolio/RayTracer/ambient.png`}
                 alt="RayTracer Render Screenshot"
                 caption="Ambient Lighting Only"
                 />
                 <ZoomableImage
-                src={`${process.env.PUBLIC_URL}/images/portfolio/Raytracer/diffuse.png`}
+                src={`${process.env.PUBLIC_URL}/images/portfolio/RayTracer/diffuse.png`}
                 alt="RayTracer Render Screenshot"
                 caption="Diffuse Lighting Only"
                 />
                 <ZoomableImage
-                src={`${process.env.PUBLIC_URL}/images/portfolio/Raytracer/specular.png`}
+                src={`${process.env.PUBLIC_URL}/images/portfolio/RayTracer/specular.png`}
                 alt="RayTracer Render Screenshot"
                 caption="Ambient + Specular Lighting"
                 />
@@ -38,12 +38,12 @@ function RayTracerBody({ project }) {
             <p>The ray tracer includes a configurable camera that allows for different viewing angles and positioning. This feature also supports two projection modes: perspective and orthographic. Additionally, a screen capture feature is available for recording the rendered scenes.</p>
             <div className="accomplishment-image-group">
                 <ZoomableImage
-                src={`${process.env.PUBLIC_URL}/images/portfolio/Raytracer/RayTracerPerspective.png`}
+                src={`${process.env.PUBLIC_URL}/images/portfolio/RayTracer/RayTracerPerspective.png`}
                 alt="RayTracer Render Screenshot"
                 caption="Perspective Render"
                 />
                 <ZoomableImage
-                src={`${process.env.PUBLIC_URL}/images/portfolio/Raytracer/RayTracerOrthographic.png`}
+                src={`${process.env.PUBLIC_URL}/images/portfolio/RayTracer/RayTracerOrthographic.png`}
                 alt="RayTracer Render Screenshot"
                 caption="Orthographic Render"
                 />
