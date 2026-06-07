@@ -39,6 +39,11 @@ export default class ProjectCard extends Component {
                 Devloped by: {projectData.developer}
               </h4>
             )}
+            {projectData.teamSize && (
+              <p className="project-team-size">
+                Team Size: {projectData.teamSize}
+              </p>
+            )}
           </div>
           
           <div className="project-tags-container">

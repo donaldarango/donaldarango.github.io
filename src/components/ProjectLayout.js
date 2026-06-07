@@ -65,6 +65,16 @@ function ProjectLayout({ project, children }) {
               <span>at {project.developer}</span>
             )
           }</p>
+          {project.teamSize && (
+            <p className="project-team-size layout-team-size" style={{ marginBottom: '0.5rem', color: '#888' }}>
+              Team Size: {project.teamSize}
+            </p>
+          )}
+          {(project.startDate || project.endDate) && (
+            <p className="project-dates layout-dates" style={{ marginBottom: '1.5rem', color: '#888' }}>
+              {project.startDate} {project.startDate && project.endDate && '-'} {project.endDate}
+            </p>
+          )}
           
           
           <div className="tags-list layout-tags-list">

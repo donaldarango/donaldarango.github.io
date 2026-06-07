@@ -3,15 +3,37 @@ import './ProjectBody.css';
 
 function ZoomableImage({ src, alt, caption }) {
   const [isOpen, setIsOpen] = useState(false);
+  
+  const isVideo = src && src.match(/\.(mp4|webm|ogg)$/i);
+
+  const renderMedia = (className, onClick = undefined) => {
+    if (isVideo) {
+      return (
+        <video 
+          className={className} 
+          src={src} 
+          onClick={onClick}
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+        />
+      );
+    }
+    return (
+      <img 
+        className={className}
+        src={src} 
+        alt={alt} 
+        onClick={onClick}
+      />
+    );
+  };
 
   return (
     <>
       <div className="accomplishment-image-container">
-        <img className="accomplishment-image"
-          src={src} 
-          alt={alt} 
-          onClick={() => setIsOpen(true)}
-        />
+        {renderMedia("accomplishment-image", () => setIsOpen(true))}
         {caption && <span className="image-caption">{caption}</span>}
       </div>
 
@@ -19,7 +41,7 @@ function ZoomableImage({ src, alt, caption }) {
         <div className="image-modal-overlay" onClick={() => setIsOpen(false)}>
           <div className="image-modal-content" onClick={e => e.stopPropagation()}>
             <button className="image-modal-close" onClick={() => setIsOpen(false)}>&times;</button>
-            <img src={src} alt={`${alt} - Enlarged view`} />
+            {renderMedia()}
           </div>
         </div>
       )}

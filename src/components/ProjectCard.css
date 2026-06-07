@@ -104,17 +104,24 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-height: 90px;
+  flex-grow: 1;
   text-align: center;
-  padding: 15px 10px 0px 10px;
+  padding: 10px 10px 5px 10px;
   box-sizing: border-box;
 } 
 
 .project-developer {
-  margin: 5px 0 0 0;
+  margin: 1px 0 0 0;
   font-size: 1rem;
   font-weight: 400;
   color: #666;
+}
+
+.project-team-size {
+  margin: 2px 0 0 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #888;
 }
 
 .project-title {
@@ -125,10 +132,10 @@
 }
 
 .project-tags-container {
-  padding: 12px;
+  padding: 10px;
   border-top: 1px solid #e0e0e0;
   background: #fafafa;
-  flex-grow: 1;
+  flex-grow: 0;
   display: flex;
   flex-direction: column;
 }
