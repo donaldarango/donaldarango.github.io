@@ -19,8 +19,8 @@ function ProjectLayout({ project, children }) {
 
   const videoUrl = project.bannerVideourl || project.videourl;
   const imageUrl = project.bannerImgurl || project.imgurl;
-  const isVideo = videoUrl && videoUrl.match(/\.(mp4|webm|ogg|mov)$/i);
-  const isGif = videoUrl && videoUrl.toLowerCase().endsWith('.gif');
+  const isVideo = videoUrl && videoUrl.match(/\.(mp4|ogg|mov)$/i);
+  const isImageAnimation = videoUrl && videoUrl.match(/\.(gif|webp)$/i);
 
   return (
     <section id="project-detail">
@@ -41,7 +41,7 @@ function ProjectLayout({ project, children }) {
               <source src={`${process.env.PUBLIC_URL}/${videoUrl}`} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-          ) : isGif ? (
+          ) : isImageAnimation ? (
             <img src={`${process.env.PUBLIC_URL}/${videoUrl}`} alt={project.name} className="project-hero-image layout-hero-image" />
           ) : imageUrl ? (
             <img src={`${process.env.PUBLIC_URL}/${imageUrl}`} alt={project.name} className="project-hero-image layout-hero-image" />
